@@ -1,0 +1,13 @@
+Explications des principales fonctions
+socket.socket(family, type) : Crée un socket.
+family : Définit la famille d'adresses (par ex. socket.AF_INET pour IPv4).
+type : Définit le type de socket (par ex. socket.SOCK_STREAM pour TCP).
+bind((host, port)) : Associe le socket à une adresse et un port.
+listen() : Active le mode écoute.
+accept() : Attend et accepte une connexion entrante. Retourne (conn, addr) :
+conn : Nouveau socket pour la connexion.
+addr : Adresse du client.
+recv(buffer_size) : Lit les données envoyées par le client.
+sendall(data) : Envoie des données au client.
+Pour tester :
+Vous pouvez créer un client Python en parallèle ou utiliser un outil comme telnet ou netcat pour vous connecter au serveur.
